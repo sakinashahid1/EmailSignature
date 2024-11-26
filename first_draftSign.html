@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Email Signature</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .signature-container {
+            max-width: 100%;
+            width: 600px;
+            /* margin: 0 auto; */
+            border-collapse: collapse;
+            word-wrap: break-word;
+        }
+
+        .signature-header {
+            border-bottom: 1px solid #007bff;
+            padding-bottom: 10px;
+        }
+		
+		.signature-header a{
+			margin-left: 5px;
+			padding-left: 10px;
+			border-left: 2px solid black;
+		}
+
+        .profile-image {
+            width: 70px;
+            height: 70px;
+            object-fit: cover;
+            margin-right: 20px;
+            margin-top: 10px;
+        }
+
+        .info-row {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            margin: 10px 0;
+        }
+
+        .info-details {
+            flex: 1;
+            margin-left: 10px;
+        }
+
+        .info-details img{
+            vertical-align: middle;
+            width: 16px;
+            height: 16px;
+        }
+
+        .info-row div {
+            margin-bottom: 5px;
+        }
+
+        .banner img {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 10px 0;
+        }
+
+        .footer-text {
+            font-size: 12px;
+            color: #666;
+            text-align: justify;
+            margin-top: 10px;
+        }
+
+        .footer-links {
+            font-size: 12px;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .footer-links a:first-of-type {
+            border-right: 1px solid #666;
+            margin-right: 5px;
+            padding-right: 5px;
+        }
+
+        /* Ensure responsiveness */
+        @media (max-width: 600px) {
+            .info-row {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .info-details {
+                margin-left: 0;
+                margin-top: 10px;
+            }
+
+            .profile-image {
+                width: 80px;
+                height: 80px;
+            }
+
+            .signature-container {
+                width: 100%;
+                padding: 0 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <table class="signature-container">
+        <!-- Header -->
+        <tr class="signature-header">
+            <td colspan="2">
+                <strong style="font-size: 26px;">Mitendra Singh Tomar</strong><br />
+                <span>Senior Software Engineer</span>
+                <a href="https://axipays.com">https://axipays.com</a>
+            </td>
+        </tr>
+
+        <!-- Contact Info -->
+        <tr>
+            <td colspan="2">
+                <div class="info-row">
+                    <!-- Profile Image -->
+                    <div>
+                        <img src="https://axipays.com/assets/acipaysLogoc.png" alt="Axipays Logo" class="profile-image" />
+                    </div>
+
+                    <!-- Contact Details -->
+                    <!-- <div class="info-details">
+                        <div>
+                            📧 &nbsp; mitendra@axipays.io
+                        </div>
+                        <div>
+                            📞 &nbsp; +91 96446 75859
+                        </div>
+                        <div>
+                            💬 &nbsp; Skype: live:.cid.df35ed27b9e6648
+                        </div>
+                        <div>
+                            ✈️ &nbsp; Telegram: <a href="https://t.me/Mitendra05" target="_blank">https://t.me/Mitendra05</a>
+                        </div>
+                        <div>
+                            🔗 &nbsp; LinkedIn: <a href="https://www.linkedin.com/in/mitendrasinghtomar/" target="_blank">Mitendra Singh Tomar</a>
+                        </div>
+                    </div> -->
+                    <div class="info-details">
+                        <div>
+                            <img src="https://axipays.com/assets/email.png" alt="email" > &nbsp; mitendra@axipays.io
+                        </div>
+                        <!-- <div>
+                            <img src="https://axipays.com/assets/phone.png" alt="phone" > &nbsp; +91 96446 75859
+                        </div> -->
+                        <div>
+                            <img src="https://axipays.com/assets/skype.png" alt="Skype link" > &nbsp; Skype: live:.cid.df35ed27b9e6648
+                        </div>
+                        <div>
+                            <img src="https://axipays.com/assets/tele.png" alt="Telegram link"> &nbsp; Telegram: <a href="https://t.me/Mitendra05" target="_blank">https://t.me/Mitendra05</a>
+                        </div>
+                        <div>
+                            <img src="https://axipays.com/assets/link.png" alt="LinkedIn link"> &nbsp; LinkedIn: <a href="https://www.linkedin.com/in/mitendrasinghtomar/" target="_blank">Mitendra Singh Tomar</a>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+
+        <!-- Banner -->
+        <tr class="banner">
+            <td colspan="2">
+                <a href="https://axipays.com" target="_blank"><img src="https://axipays.com/assets/banner.png" alt="Axipays Tag Line" /></a>
+            </td>
+        </tr>
+
+        <!-- Footer -->
+        <tr>
+            <td colspan="2">
+                <p class="footer-text">
+                    The information contained in this message, including any attachments, is strictly internal and confidential. It is intended solely for the use of the individual or entity to whom it is addressed. Unauthorized disclosure, copying, or distribution of this communication is strictly prohibited. For further assistance, contact us at <a href="mailto:support@axipays.com">support@axipays.com</a>.
+                </p>
+                <div class="footer-links">
+                    <a href="https://axipays.com" target="_blank">privacy policy</a>
+                    <a href="https://axipays.com" target="_blank">terms & conditions</a>
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
